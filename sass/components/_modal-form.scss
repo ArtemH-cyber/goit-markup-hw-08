@@ -1,0 +1,193 @@
+.modal-svg-btn {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: var(--black-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: #2196f3;
+  }
+}
+
+.form-modal-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.form-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #212121;
+}
+
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 0px 12px 42px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-svg-btn-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: var(--black-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+
+  .form-input:hover + &,
+  .form-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.form-field textarea {
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  font-style: normal;
+  font-weight: normal;
+  resize: none;
+}
+
+.modal-form-message::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-message:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-field label {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.checkbox-input {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.checkbox-input label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+
+/* задаем размер checkbox  */
+.checkbox-input input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox-modal-form-pollicy {
+  &::before {
+    display: inline-block;
+    /* выравниваем в строчку */
+    vertical-align: middle;
+    margin: 0px 8px;
+    content: "";
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url("../images/none_check.svg");
+  }
+
+  .checkbox-modal-form:checked + &::before {
+    background-image: url("../images/check.svg");
+  }
+
+  .checkbox-modal-form:focus + &::before {
+    outline: 2px solid blue;
+  }
+}
+
+/* валидность даных в форме цвет */
+
+.form-input:required:focus:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.form-input:required:focus:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.modal-form-button {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 10px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--white-color);
+  }
+}

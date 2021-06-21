@@ -1,0 +1,44 @@
+/* =====БАЗОВЫЙ СБРОС===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--body-color);
+  letter-spacing: 0.03em;
+}
+
+/* переопределяем изображения с строчных в блочные */
+img {
+  display: block;
+}
+
+/* запретитть пользователю ростягивать поле в модалке коментарии */
+textarea {
+  resize: none;
+}
+
+/* убираем в списке маркеры */
+.list {
+  list-style: none;
+}
+
+/* убираем в сылках подчеркивание */
+.link {
+  text-decoration: none;
+}
