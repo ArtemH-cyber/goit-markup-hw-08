@@ -1,12 +1,75 @@
-.features-menu {
+// .features-menu {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .features-menu-title {
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-transform: uppercase;
+//   margin-bottom: 10px;
+// }
+
+// .features-menu-text {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   color: var(--text-color);
+// }
+
+// .features-menu-item {
+//   width: 270px;
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .features-icon {
+//   width: 70px;
+//   height: 70px;
+// }
+
+// .features-icon-item {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background-color: var(--background-color-btn);
+//   border-radius: 4px;
+// }
+
+.features-menu-item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.features-icon-item {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-color-btn);
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-menu-title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+  color: var(--body-color);
   margin-bottom: 10px;
 }
 
@@ -16,26 +79,31 @@
   color: var(--text-color);
 }
 
-.features-menu-item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .features-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .features-menu-item {
+    width: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  .features-menu-title {
+    text-align: start;
   }
 }
 
-.features-icon {
-  width: 70px;
-  height: 70px;
-}
+@media screen and (min-width: 1200px) {
+  .features-menu {
+    flex-wrap: nowrap;
+  }
 
-.features-icon-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--background-color-btn);
-  border-radius: 4px;
+  .container {
+    margin-bottom: 94px;
+  }
 }
