@@ -1001,4 +1001,76 @@ textarea {
   height: 24px;
   fill: var(--white-color);
 }
+
+@media screen and (min-width: 768px) {
+  .footer-menu-link {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-contact {
+    width: 231px;
+    margin-right: 165px;
+  }
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-menu {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
+  .footer-contact {
+    margin-right: 70px;
+    text-align: start;
+  }
+  .footer-form-input {
+    width: 358px;
+  }
+  .contact-menu-link {
+    transition: color var(--transition-duration) var(--transition-timing-function);
+  }
+  .contact-menu-link:hover, .contact-menu-link:focus {
+    color: var(--accent-color);
+  }
+  .footer-form {
+    width: 570px;
+    height: 86px;
+    margin-left: auto;
+  }
+  .footer-modal-form {
+    align-items: flex-start;
+  }
+  .footer-form-label {
+    cursor: pointer;
+    text-align: start;
+  }
+  .footer-form-input-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  .footer-form-input {
+    cursor: pointer;
+    margin-right: 12px;
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
+  }
+  .footer-form-input:hover, .footer-form-input:focus {
+    border-color: var(--accent-color);
+  }
+  .footer-button {
+    transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
+    cursor: pointer;
+  }
+  .footer-button:hover, .footer-button:focus {
+    background-color: #188ce8;
+    color: var(--white-color);
+  }
+  .footer-svg-btn {
+    top: 25%;
+    transform: translateY(-25%);
+  }
+}
 /*# sourceMappingURL=main.css.map */
