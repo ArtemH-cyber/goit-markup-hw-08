@@ -538,7 +538,8 @@ textarea {
   .header-contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    margin-left: 80px;
+    justify-content: space-between;
   }
   .header-contact-item:not(:last-child) {
     margin-bottom: 10px;
@@ -602,7 +603,6 @@ textarea {
     margin-right: 50px;
   }
   .logo-link_black {
-    color: var(--black-color);
     margin-right: 88px;
   }
   .smartphone-icon {
@@ -617,6 +617,22 @@ textarea {
   .logo__link {
     margin-right: 93px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+  }
+}
+
+.logo-link_black {
+  margin-right: 93px;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .hero {
