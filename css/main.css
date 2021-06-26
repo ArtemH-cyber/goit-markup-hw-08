@@ -744,12 +744,38 @@ textarea {
   .hero {
     max-width: 1600px;
   }
+  .hero-box {
+    background-image: url("../images/hero/hero-1600.jpg");
+  }
+  .hero .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: 118px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero-box {
     background-image: url("../images/hero/hero-3200.jpg");
   }
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-top: 118px;
+  margin-bottom: 30px;
 }
 
 .features-menu-item {
