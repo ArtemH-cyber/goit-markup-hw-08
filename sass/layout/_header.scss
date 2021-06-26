@@ -310,21 +310,24 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .header-container {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    align-items: center;
+  .header {
+    &-container {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      align-items: center;
+    }
+
+    &-contact {
+      align-items: center;
+    }
+
+    &-contact-item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
   }
 }
 
 .logo-link_black {
   margin-right: 93px;
-}
-
-// .header-contact-link {
-//   align-items: center;
-// }
-
-.header-contact-item:not(:last-child) {
-  margin-right: 30px;
 }

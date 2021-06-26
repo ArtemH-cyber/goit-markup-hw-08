@@ -30,7 +30,7 @@
 }
 
 .modal-form {
-  width: 448px;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0px;
@@ -189,5 +189,11 @@
   &:focus {
     background-color: #188ce8;
     color: var(--white-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 448px;
   }
 }
