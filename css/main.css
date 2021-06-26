@@ -77,7 +77,6 @@ textarea {
 
 .container {
   padding: 60px 15px;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
