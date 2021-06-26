@@ -100,7 +100,7 @@
   }
 }
 
-.hero-box {
+.hero {
   min-height: 480px;
   background-image: url("../images/hero/hero-480.jpg");
   background-repeat: no-repeat;
@@ -111,13 +111,13 @@
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero-box {
+  .hero {
     background-image: url("../images/hero/hero-768.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero-box {
+  .hero {
     background-image: url("../images/hero/hero-768.jpg");
   }
 
@@ -129,7 +129,7 @@
 @media (min-device-pixel-ratio: 2) and (min-width: 767px),
   (min-resolution: 192dpi) and (min-width: 767px),
   (min-resolution: 2dppx) and (min-width: 767px) {
-  .hero-box {
+  .hero {
     background-image: url("../images/hero/hero-1536.jpg");
   }
 }
@@ -137,12 +137,16 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    background-size: cover;
 
-    &-box {
-      background-image: url("../images/hero/hero-1600.jpg");
-    }
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .hero-title {
+    background-image: url("../images/hero/hero-1600.jpg");
+    background-size: cover;
+
+    &-title {
       font-weight: 900;
       font-size: 44px;
       line-height: 1.36;
@@ -150,28 +154,30 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--white-color);
-      margin-top: 118px;
+      margin-top: 60px;
       margin-bottom: 30px;
     }
   }
 }
 
+// .hero {
+//   background-color: var(--background-color);
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url("../images/hero/hero-1600.jpg");
+//   max-width: 1600px;
+//   margin: 0 auto;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
   (min-resolution: 192dpi) and (min-width: 1200px),
   (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero-box {
+  .hero {
     background-image: url("../images/hero/hero-3200.jpg");
+    background-size: cover;
   }
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin-top: 118px;
-  margin-bottom: 30px;
 }
