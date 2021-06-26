@@ -113,6 +113,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 60px;
   }
 
   &-button-btn {
@@ -169,6 +170,7 @@
   &-image-menu {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   &-image-menu-item {
@@ -228,7 +230,6 @@
   .portfolio {
     &-button-menu {
       justify-content: center;
-      margin-top: 60px;
       margin-bottom: 30px;
     }
 
@@ -237,14 +238,13 @@
       flex-direction: row;
       flex-wrap: wrap;
       margin-left: -30px;
-      margin-top: -30px;
-      margin-bottom: 64px;
+      // margin-top: -30px;
     }
 
     &-image-menu-item {
       flex-basis: calc((100% - 60px) / 2);
       margin-left: 30px;
-      margin-top: 30px;
+      // margin-top: 30px;
     }
   }
 }
@@ -258,6 +258,10 @@
     &-button-menu {
       margin-bottom: 50px;
       margin-top: 94px;
+    }
+
+    &-image-menu {
+      margin-bottom: 94px;
     }
   }
 }
