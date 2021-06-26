@@ -228,6 +228,7 @@
   .portfolio {
     &-button-menu {
       justify-content: center;
+      margin-top: 60px;
       margin-bottom: 30px;
     }
 
@@ -247,14 +248,15 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .portfolio {
-    &-button-menu {
-      margin-bottom: 50px;
-    }
-
     &-image-menu-item {
       flex-basis: calc((100% - 90px) / 3);
+    }
+
+    &-button-menu {
+      margin-bottom: 50px;
+      margin-top: 94px;
     }
   }
 }
