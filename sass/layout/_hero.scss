@@ -54,8 +54,9 @@
   min-height: 480px;
   background-color: var(--background-color);
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.9),
-      rgba(47, 48, 58, 0.9)
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero/hero-480.jpg");
   max-width: 480px;
@@ -108,13 +109,23 @@
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url("../images/hero/hero-768.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-768.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero/hero-768.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-768.jpg");
   }
 
   .hero {
@@ -126,7 +137,12 @@
   (min-resolution: 192dpi) and (min-width: 767px),
   (min-resolution: 2dppx) and (min-width: 767px) {
   .hero {
-    background-image: url("../images/hero/hero-1536.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-1536.jpg");
   }
 }
 
@@ -134,12 +150,15 @@
   .hero {
     max-width: 1600px;
     background-size: cover;
-
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
-
-    background-image: url("../images/hero/hero-1600.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-1600.jpg");
     background-size: cover;
 
     &-title {
@@ -160,7 +179,12 @@
   (min-resolution: 192dpi) and (min-width: 1200px),
   (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/hero/hero-3200.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(39, 45, 112, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-3200.jpg");
     background-size: cover;
   }
 }
