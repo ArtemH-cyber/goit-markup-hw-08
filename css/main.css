@@ -173,7 +173,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mobile-menu {
     position: fixed;
     z-index: 999;
@@ -551,7 +551,7 @@ textarea {
   color: var(--black-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header-menu {
     display: none;
   }
@@ -703,7 +703,7 @@ textarea {
   min-height: 480px;
   background-color: var(--background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-480.jpg");
-  max-width: 480px;
+  max-width: 768px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -755,9 +755,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-768.jpg");
-  }
-  .hero {
-    max-width: 768px;
+    max-width: 1200px;
   }
 }
 
@@ -792,7 +790,7 @@ textarea {
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(39, 45, 112, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-3200.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-3200.jpg");
     background-size: cover;
   }
 }
