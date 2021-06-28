@@ -180,6 +180,10 @@
   background-color: var(--background-color);
 }
 
+.footer-form {
+  width: 100%;
+}
+
 .footer-menu {
   display: flex;
   align-items: center;
@@ -274,6 +278,8 @@
 .footer-form-input-button {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 450px;
 }
 
 .footer-form-input {
@@ -342,8 +348,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .social-networks-title {
+    text-align: start;
+  }
+
   .footer-menu {
-    display: flex;
     align-items: baseline;
     flex-direction: row;
   }
@@ -383,9 +392,9 @@
   }
 
   .footer-form-input-button {
-    display: flex;
     flex-direction: row;
-    margin-left: auto;
+    // margin-left: auto;
+    max-width: 450px;
   }
 
   .footer-form-input {

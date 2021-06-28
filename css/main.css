@@ -1234,6 +1234,10 @@ textarea {
   background-color: var(--background-color);
 }
 
+.footer-form {
+  width: 100%;
+}
+
 .footer-menu {
   display: flex;
   align-items: center;
@@ -1324,6 +1328,8 @@ textarea {
 .footer-form-input-button {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 450px;
 }
 
 .footer-form-input {
@@ -1390,8 +1396,10 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  .social-networks-title {
+    text-align: start;
+  }
   .footer-menu {
-    display: flex;
     align-items: baseline;
     flex-direction: row;
   }
@@ -1421,9 +1429,8 @@ textarea {
     text-align: start;
   }
   .footer-form-input-button {
-    display: flex;
     flex-direction: row;
-    margin-left: auto;
+    max-width: 450px;
   }
   .footer-form-input {
     cursor: pointer;
