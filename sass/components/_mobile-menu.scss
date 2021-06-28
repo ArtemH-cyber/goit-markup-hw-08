@@ -13,6 +13,10 @@
     // прокрутка при переполнении контента
     overflow: auto;
 
+    &-link.accent {
+      color: var(--accent-color);
+    }
+
     &-container {
       position: relative;
       width: 100vw;
@@ -47,7 +51,7 @@
     }
 
     &-nav {
-      margin-bottom: 302px;
+      margin-bottom: 62px;
     }
 
     &-tel {
@@ -74,6 +78,7 @@
     &-social-list {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &-social-link {
@@ -87,6 +92,12 @@
     &-social-item {
       margin-right: 20px;
     }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-nav {
+    margin-bottom: 302px;
   }
 }
 

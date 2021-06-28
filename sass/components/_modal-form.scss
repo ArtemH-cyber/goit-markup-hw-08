@@ -30,7 +30,7 @@
 }
 
 .modal-form {
-  width: 370px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0px;
@@ -114,8 +114,8 @@
 }
 
 .checkbox-input {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .checkbox-input label {
@@ -189,6 +189,17 @@
   &:focus {
     background-color: #188ce8;
     color: var(--white-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form {
+    width: 370px;
+  }
+
+  .checkbox-input {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
 

@@ -187,6 +187,9 @@ textarea {
     background-color: white;
     overflow: auto;
   }
+  .mobile-menu-link.accent {
+    color: var(--accent-color);
+  }
   .mobile-menu-container {
     position: relative;
     width: 100vw;
@@ -214,7 +217,7 @@ textarea {
     margin-bottom: 32px;
   }
   .mobile-menu-nav {
-    margin-bottom: 302px;
+    margin-bottom: 62px;
   }
   .mobile-menu-tel {
     display: block;
@@ -237,6 +240,7 @@ textarea {
   .mobile-menu-social-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .mobile-menu-social-link {
     font-weight: 500;
@@ -247,6 +251,12 @@ textarea {
   }
   .mobile-menu-social-item {
     margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-nav {
+    margin-bottom: 302px;
   }
 }
 
@@ -281,11 +291,11 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 300px;
+  height: 548px;
   border-radius: 4px;
   background-color: var(--white-color);
-  padding: 40px;
+  padding: 36px 10px 10px 10px;
 }
 
 .modal-close-btn {
@@ -304,6 +314,14 @@ textarea {
   background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -345,7 +363,7 @@ textarea {
 }
 
 .modal-form {
-  width: 370px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0px;
@@ -428,8 +446,8 @@ textarea {
 }
 
 .checkbox-input {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .checkbox-input label {
@@ -498,6 +516,16 @@ textarea {
 .modal-form-button:hover, .modal-form-button:focus {
   background-color: #188ce8;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form {
+    width: 370px;
+  }
+  .checkbox-input {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -672,11 +700,14 @@ textarea {
 }
 
 .hero {
+  min-height: 480px;
   background-color: var(--background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.9), rgba(47, 48, 58, 0.9)), url("../images/hero/hero-480.jpg");
   max-width: 480px;
   margin: 0 auto;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -713,14 +744,6 @@ textarea {
 .hero-button:hover, .hero-button:focus {
   background-color: #188ce8;
   color: var(--white-color);
-}
-
-.hero {
-  min-height: 480px;
-  background-image: url("../images/hero/hero-480.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
